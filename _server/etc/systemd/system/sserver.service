@@ -1,0 +1,12 @@
+[Unit]
+Description=Elasticsearch Dashboard Server Daemin
+After=network.target
+
+[Service]
+User=esdashboard
+Group=esdashboard
+WorkingDirectory=/home/esdashboard/elastic-dashboard/app
+ExecStart=/home/sserver/.envs/elastic-dashboard/bin/python dash_server.py --log_file_prefix=/home/elastic-dashboard/logs/app.log --logging=info
+
+[Install]
+WantedBy=multi-user.target
