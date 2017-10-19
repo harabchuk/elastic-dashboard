@@ -1,6 +1,6 @@
 from os.path import dirname, join
 
-APP_PATH = dirname(__file__)
+APP_PATH = dirname(dirname(__file__))
 ROOT_PATH = dirname(APP_PATH)
 
 SETTINGS = dict(
@@ -9,3 +9,4 @@ SETTINGS = dict(
     autoreload=True
 )
 
+CHARTS = {}

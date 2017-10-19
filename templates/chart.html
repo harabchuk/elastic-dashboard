@@ -1,0 +1,9 @@
+var chart_{{chart['div']}} = new google.visualization.ChartWrapper({
+    chartType: '{{chart['type']}}',
+    dataSourceUrl: 'http://localhost:8888/chart_data?tqrt=scriptInjection&id={{chart['id']}}',
+    options: {'title': '{{chart['title']}}', width: 400, height: 240},
+    containerId: '{{chart['div']}}',
+    refreshInterval: {{dashboard['refresh_interval']}}
+});
+chart_{{chart['div']}}.draw()
+
