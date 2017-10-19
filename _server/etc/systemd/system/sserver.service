@@ -1,5 +1,5 @@
 [Unit]
-Description=Elasticsearch Dashboard Server Daemin
+Description=Elasticsearch Dashboard Server Daemon
 After=network.target
 
 [Service]

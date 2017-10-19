@@ -1,7 +1,7 @@
 import tornado.ioloop
 import tornado.web
-from .settings import SETTINGS, APP_PATH
-from .routes import ROUTES
+from app.settings import SETTINGS, APP_PATH
+from app.routes import ROUTES
 import sys
 from tornado.options import options, define
 from os.path import join, dirname

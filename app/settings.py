@@ -1,8 +1,9 @@
-from os import path
+from os.path import dirname, join
 
-APP_PATH = path.dirname(path.dirname(__file__))
+APP_PATH = dirname(__file__)
+ROOT_PATH = dirname(APP_PATH)
 
 SETTINGS = dict(
-    template_path=path.join(APP_PATH, 'templates'),
-    static_path=path.join(APP_PATH, 'static'),
+    template_path=join(ROOT_PATH, 'templates'),
+    static_path=join(ROOT_PATH, 'static'),
 )
